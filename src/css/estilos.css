@@ -285,7 +285,7 @@ fieldset {
     margin-top: auto;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
     header {
         padding: 10px 24px;
     }
@@ -303,7 +303,7 @@ fieldset {
 }
 
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
     header {
         padding: 10px 16px;
     }
@@ -336,7 +336,7 @@ fieldset {
     }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     .acciones-carrito {
         flex-direction: column-reverse;
     }
