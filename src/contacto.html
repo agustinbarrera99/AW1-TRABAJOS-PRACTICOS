@@ -6,25 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contacto - PC Store</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
 
   <body>
     <header>
-      <span>PC Store</span>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="resources/imagenes/logoDoctatech.png"
+          alt="Logo de DoctaTech"
+        />
+      </a>
 
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="carrito.html">Carrito</a></li>
-          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
-        </ul>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-boton" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </header>
 
     <main>
       <section>
-        <h2>Contacto</h2>
+        <h1>Contacto</h1>
 
         <p>
           ¿Tenés alguna consulta sobre nuestros productos? Completá el
@@ -134,18 +147,18 @@
 
         <address>
           <p>Córdoba Capital, Argentina</p>
-          <p>Teléfono: <a href="tel:+543510000000">351-000-0000</a></p>
-          <p>
-            Email:
-            <a href="mailto:contacto@pcstore.com">contacto@pcstore.com</a>
-          </p>
+
+          <p>Teléfono: 351-000-0000</p>
+
+          <p>Email: contacto@pcstore.com</p>
         </address>
       </section>
     </main>
 
     <footer>
       <p>PC Store - Hardware y tecnología</p>
-      <p><small>© 2026 PC Store</small></p>
+
+      <p>© 2026 PC Store</p>
     </footer>
   </body>
 </html>

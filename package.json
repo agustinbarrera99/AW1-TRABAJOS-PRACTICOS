@@ -20,6 +20,7 @@
   "packageManager": "pnpm@12.4.2",
   "type": "module",
   "dependencies": {
+    "AW1-TRABAJOS-PRACTICOS": "link:",
     "five-server": "^0.5.0"
   }
 }

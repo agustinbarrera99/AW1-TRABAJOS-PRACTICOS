@@ -10,132 +10,78 @@
       content="Tienda de hardware, componentes y accesorios para PC"
     />
 
-    <title>PC Store - Inicio</title>
+    <title>DoctaTech - Inicio</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
 
   <body>
     <header>
-      <span>PC Store</span>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="./resources/imagenes/logoDoctatech.png"
+          alt="Logo de DoctaTech"
+        />
+      </a>
 
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="carrito.html">Carrito</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <input type="checkbox" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-boton" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </header>
 
     <main>
-      <section aria-labelledby="titulo-bienvenida">
+      <section class="seccion presentacion">
         <h1>Bienvenidos a PC Store</h1>
+
         <p>
           Somos una tienda especializada en hardware, componentes, periféricos y
           accesorios para PC.
         </p>
 
         <p>
-          Encontrá productos para actualizar tu computadora, armar tu PC gamer o
-          mejorar tu espacio de trabajo.
+          Nuestro objetivo es ofrecer productos de calidad para actualizar
+          computadoras, armar equipos gamer y mejorar espacios de trabajo.
         </p>
       </section>
 
-      <section id="catalogo">
-        <h2>Catálogo de productos</h2>
+      <section class="seccion">
+        <h2>¿Quiénes somos?</h2>
 
-        <article>
-          <h3>Placa de video NVIDIA RTX 4060 8GB</h3>
+        <p>
+          PC Store es una tienda dedicada a la tecnología y al hardware
+          informático. Ofrecemos diferentes componentes y accesorios para cubrir
+          las necesidades de nuestros clientes.
+        </p>
 
-          <img
-            src="./resources/images/placadevideo.jpg"
-            alt="Placa de video NVIDIA GeForce RTX 4060"
-            width="300"
-          />
-
-          <p>Placa de video NVIDIA GeForce RTX 4060 con 8 GB de memoria.</p>
-
-          <p>
-            <strong>Precio: $550.000</strong>
-          </p>
-
-          <p>Stock disponible</p>
-
-          <a
-            href="producto.html"
-            aria-label="Ver detalle de Placa de video NVIDIA RTX 4060 8GB"
-          >
-            Ver detalle
-          </a>
-        </article>
-
-        <hr />
-
-        <article>
-          <h3>Procesador AMD Ryzen 5 5600</h3>
-
-          <img
-            src="./resources/images/procesador.jpg"
-            alt="Procesador AMD Ryzen 5 5600"
-          />
-
-          <p>Procesador AMD Ryzen 5 de 6 núcleos y 12 hilos.</p>
-
-          <p>
-            <strong>Precio: $180.000</strong>
-          </p>
-
-          <p>Stock disponible</p>
-        </article>
-
-        <hr />
-
-        <article>
-          <h3>Memoria RAM 16GB DDR4</h3>
-
-          <img
-            src="./resources/images/memoriaram.jpg"
-            alt="Memoria RAM 16GB DDR4"
-          />
-
-          <p>Memoria RAM DDR4 de 16 GB a 3200 MHz.</p>
-
-          <p>
-            <strong>Precio: $65.000</strong>
-          </p>
-
-          <p>Stock disponible</p>
-        </article>
-
-        <hr />
-
-        <article>
-          <h3>SSD Kingston 1TB</h3>
-
-          <img
-            src="./resources/images/discossd.jpg"
-            alt="Unidad de almacenamiento SSD Kingston de 1 TB"
-            width="300"
-          />
-
-          <p>Unidad SSD de 1 TB para almacenamiento rápido y seguro.</p>
-
-          <p>
-            <strong>Precio: $95.000</strong>
-          </p>
-
-          <p>Stock disponible</p>
-        </article>
+        <p>
+          Buscamos brindar asesoramiento personalizado y facilitar la elección
+          de los productos adecuados para cada usuario.
+        </p>
       </section>
 
-      <section>
+      <section class="seccion">
         <h2>¿Por qué comprar con nosotros?</h2>
 
         <ul>
           <li>Productos con garantía.</li>
+
           <li>Componentes originales.</li>
+
           <li>Asesoramiento personalizado.</li>
+
           <li>Envíos a todo el país.</li>
+
           <li>Retiro en Córdoba Capital.</li>
         </ul>
       </section>
@@ -146,7 +92,7 @@
 
       <address>Córdoba Capital, Argentina</address>
 
-      <p><small>© 2026 PC Store</small></p>
+      <p>© 2026 PC Store</p>
     </footer>
   </body>
 </html>
