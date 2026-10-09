@@ -6,40 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>RTX 4060 - PC Store</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
 
   <body>
     <header>
-      <span>PC Store</span>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="resources/imagenes/logoDoctatech.png"
+          alt="Logo de DoctaTech"
+        />
+      </a>
 
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="carrito.html">Carrito</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-boton" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </header>
 
     <main>
-      <article>
-        <h2>Placa de video NVIDIA GeForce RTX 4060 8GB</h2>
+      <article class="detalle-producto">
+        <h1>NVIDIA GeForce RTX 4060 8GB</h1>
 
         <img
-          src="./resources/images/placadevideo.jpg"
+          src="./resources/imagenes/placavideo.jpg"
           alt="Placa de video NVIDIA GeForce RTX 4060 de 8 GB"
-          width="400"
         />
 
-        <p>
-          <strong>Precio: $550.000</strong>
-        </p>
+        <p class="precio">$550.000</p>
 
         <p>Stock disponible</p>
 
         <section>
-          <h3>Descripción</h3>
+          <h2>Descripción</h2>
 
           <p>
             La NVIDIA GeForce RTX 4060 es una placa de video diseñada para
@@ -53,20 +63,25 @@
         </section>
 
         <section>
-          <h3>Características</h3>
+          <h2>Características</h2>
 
-          <ul>
+          <ul class="caracteristicas">
             <li>Memoria: 8 GB GDDR6</li>
+
             <li>Arquitectura NVIDIA Ada Lovelace</li>
+
             <li>Compatible con Ray Tracing</li>
+
             <li>Compatible con NVIDIA DLSS</li>
+
             <li>Conexión PCI Express</li>
+
             <li>Salidas HDMI y DisplayPort</li>
           </ul>
         </section>
 
         <section>
-          <h3>Comprar producto</h3>
+          <h2>Comprar producto</h2>
 
           <form action="carrito.html" method="get">
             <label for="cantidad"> Cantidad: </label>
@@ -80,18 +95,20 @@
               value="1"
             />
 
-            <button type="submit">Agregar al carrito</button>
+            <button class="boton" type="submit">Agregar al carrito</button>
           </form>
         </section>
 
-        <p>
-          <a href="index.html#catalogo"> Volver al catálogo </a>
-        </p>
+        <div class="acciones-producto">
+          <a class="boton boton-secundario" href="catalogo.html"> Volver al catálogo </a>
+        </div>
       </article>
     </main>
 
     <footer>
       <p>PC Store - Hardware y tecnología</p>
+
+      <address>Córdoba Capital, Argentina</address>
 
       <p>© 2026 PC Store</p>
     </footer>

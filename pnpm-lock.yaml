@@ -166,6 +166,9 @@ importers:
 
   .:
     dependencies:
+      AW1-TRABAJOS-PRACTICOS:
+        specifier: 'link:'
+        version: 'link:'
       five-server:
         specifier: ^0.5.0
         version: 0.5.0

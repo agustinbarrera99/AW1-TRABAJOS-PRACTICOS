@@ -6,32 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Carrito - PC Store</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
 
   <body>
     <header>
-      <span>PC Store</span>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="./resources/imagenes/logoDoctatech.png"
+          alt="Logo de DoctaTech"
+        />
+      </a>
 
-      <nav aria-label="Navegación principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#catalogo">Catálogo</a></li>
-          <li><a href="carrito.html">Carrito</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-boton" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </header>
+
     <main>
-      <section>
+      <section class="seccion">
         <h1>Carrito de compras</h1>
+
         <p>Estos son los productos agregados a tu carrito.</p>
 
-        <table caption="Carrito de compras">
+        <table class="tabla-carrito">
           <thead>
             <tr>
-              <th scope="row">Producto</th>
+              <th scope="col">Producto</th>
+
               <th scope="col">Cantidad</th>
+
               <th scope="col">Precio</th>
+
               <th scope="col">Subtotal</th>
             </tr>
           </thead>
@@ -69,18 +87,23 @@
           </tfoot>
         </table>
 
-        <p>
-          <a href="index.html#catalogo"> Seguir comprando </a>
-        </p>
-
-        <a href="checkout.html" aria-label="Ir a la página de checkout">
-          <button type="button">Finalizar compra</button>
+        <div class="acciones-carrito">
+          <a class="boton boton-secundario" href="catalogo.html"
+            >Seguir comprando</a
+          >
+          <button class="boton boton-primario" type="button">
+            Finalizar compra
+          </button>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>PC Store - Hardware y tecnología</p>
-      <p><small>© 2026 PC Store</small></p>
+
+      <address>Córdoba Capital, Argentina</address>
+
+      <p>© 2026 PC Store</p>
     </footer>
   </body>
 </html>
